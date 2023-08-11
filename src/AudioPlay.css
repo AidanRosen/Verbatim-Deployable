@@ -1,0 +1,114 @@
+.record-container {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.record-button {
+  position: relative;
+  width: 250px; /* Scaled by 250% */
+  height: 250px; /* Scaled by 250% */
+  background-color: #d4a5ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 50px; /* Scaled by 250% */
+}
+
+.record-button-inner {
+  width: 150px; /* Scaled by 250% */
+  height: 150px; /* Scaled by 250% */
+  background-color: #9747ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button {
+  background-color: #d4a5ff;
+  padding: 25px 50px; /* Scaled by 250% */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 40px; /* Scaled by 250% */
+}
+
+.toggle-switch-container {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; /* Scaled by 250% */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px; /* Scaled by 250% */
+  height: 50px; /* Scaled by 250% */
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 25px; /* Scaled by 250% */
+  cursor: pointer;
+  transition: 1s; /* Scaled by 250% */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px; /* Scaled by 250% */
+  width: 40px; /* Scaled by 250% */
+  left: 5px; /* Scaled by 250% */
+  bottom: 5px; /* Scaled by 250% */
+  background-color: white;
+  border-radius: 50%;
+  transition: 1s; /* Scaled by 250% */
+}
+
+.switch input:checked + .slider {
+  background-color: #9747ff;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(50px); /* Scaled by 250% */
+}
+
+.toggle-label {
+  margin-left: 25px; /* Scaled by 250% */
+  font-size: 45px; /* Scaled by 250% */
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+/* Additional style for the processing state of the slider */
+.slider.processing {
+  background-color: #ccc; /* Adjust the color to grey out the slider */
+  cursor: not-allowed; /* Prevent clicking while processing */
+}
+
+/* ... (other styles) */
